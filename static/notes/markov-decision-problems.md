@@ -3,6 +3,7 @@
 ## Overview
 
 A Markov decision problem (MDP) is a tuple of the following:
+
 - state space, $S$ (set)
 - action space, $A$ (set)
 - transitions, $T$ ($|S|\times|S|\times|A|$ tensor)

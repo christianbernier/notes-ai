@@ -3,11 +3,13 @@
 ## Categorization
 
 ### Supervised vs unsupervised
+
 Supervised machine learning is when there is a labeled dataset for learning, whereas unsupervised learning does not.
 
 ## Gradient Descent
 
 ### Example: linear regression
+
 When fitting a line to a set of points, we are trying to minimize the R-square value:
 
 $$
@@ -19,6 +21,7 @@ We can adjust the values of $m$ and $c$ as
 $$
 m=m-\alpha\nabla_mL
 $$
+
 $$
 c=c-\alpha\nabla_cL
 $$
@@ -26,9 +29,11 @@ $$
 where $\alpha$ is the learning rate (or step size).
 
 ### Stochastic Gradient Descent
+
 Similar to Q-learning, stochastic gradient descent utilizes the changes to the approximations as it progresses through the dataset, leading to a faster convergence.
 
 ## Classification
+
 For some data point $x$, we say $\phi(x)$ is a vector with some number of dimensions which describe the data.
 
 Trying to separate terms with a line in standard form $Ax+By+C=0$, for a vector $w=[A,B]$, the line it describes (assuming $C=0$) will be perpendicular. Any data point above the line will give a positive dot product with $w$.
@@ -45,6 +50,7 @@ $$
 The goal is to minimize the number of points misclassified and maximize the margin around the line that divides the data.
 
 ### Introducing an intercept term
+
 Since the decision boundary will not always pass through the origin, we add an intercept term $b$, called the bias term. Now we have $w$ to define the slope and $b$ to define the intercept.
 
 Now, our loss function can be represented as:

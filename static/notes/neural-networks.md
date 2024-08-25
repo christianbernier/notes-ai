@@ -53,9 +53,11 @@ $$
 ## Optimizing the Network
 
 ### Activation functions
+
 A sigmoid function is good, but far from $x=0$, the gradient is quite small. Instead, another function we can use is a rectified linear unit (ReLU), which is 0 for $x<0$, then a linear function for $x>0$.
 
 ### Softmax
+
 If the output layer is meant to be a probability distribution, the nodes should sum to 1. To achieve this, we can use a softmax processing step:
 
 $$
@@ -65,6 +67,7 @@ $$
 This converts all the outputs into values in the range $[0,1]$ such that all the values sum to 1.
 
 ### Cross-Entropy Loss
+
 For a probability distribution, a good loss function would be the cross-entropy loss function:
 
 $$

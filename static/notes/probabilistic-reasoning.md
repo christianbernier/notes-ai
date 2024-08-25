@@ -3,6 +3,7 @@
 ## Expectiminimax
 
 Consider a game with two biased coins:
+
 - Coin A: 75% H, 25% T
 - Coin B: 40% H, 60% T
 
