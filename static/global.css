@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --color-dark: #0D1B1E;
+  --color-light: #FAFAFA;
+  --color-primary: #F15152;
+
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'PT Sans', sans-serif;
+
+  --margin-top: 8px;
+  --margin-bottom: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  line-height: 1.4;
+  font-size: 110%;
+}
+
+ol, ul {
+  margin-left: 32px;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+a {
+  color: var(--color-light);
+}
+
+h1 {
+  font-family: var(--font-mono);
+  --margin-multiplier: 8;
+  margin-top: 20px !important;
+}
+
+h2 {
+  --margin-multiplier: 4;
+}
+
+h3 {
+  --margin-multiplier: 2;
+}
+
+h4 {
+  --margin-multiplier: 1;
+}
+
+p {
+  --margin-multiplier: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: calc(var(--margin-top) * var(--margin-multiplier));
+  margin-bottom: calc(var(--margin-bottom) * var(--margin-multiplier));
+}
+
+#content {
+  width: min(80ch, 90%);
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
